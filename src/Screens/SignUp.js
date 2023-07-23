@@ -12,7 +12,7 @@ export default function SignUp() {
     name: "",
     email: "",
     password: "",
-    profession: ""
+    // profession:["Student","Faculty","Others"]
   });
 
 
@@ -35,7 +35,7 @@ export default function SignUp() {
           name:credintals.name,
           email:credintals.email,
           password:credintals.password,
-          profession:credintals.profession
+          // profession:credintals.profession
         }),
     });
 
@@ -80,12 +80,12 @@ export default function SignUp() {
           </div>
           <div className="mb-3">
             <label htmlFor="exampleInputPassword1" className="form-label ">Profession</label>
-            <select class="form-select w-75" aria-label="Default select example">
+            {/* <select class="form-select w-75" aria-label="Default select example">
               <option selected disabled>select the option</option>
-              <option name='Student' value={credintals.Student} onChange={handleChange}  >Student</option>
+              <option name='Student' value={credintals.profession } onChange={handleChange}  >Student</option>
               <option name='Teacher' value={credintals.profession} >Faculty</option>
               <option name='Others' value={credintals.profession} onChange={handleChange}>Others</option>
-            </select>
+            </select> */}
           </div>
           <button type="submit" className="btn btn-dark mt-3 w-25 btn-signup">SignUp</button>
           <div><Link to="/Login" className='alreadyuser'>Already an user</Link></div>
